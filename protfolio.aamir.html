@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aamir Waqar | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#f1f5f9;
+    line-height:1.6;
+}
+
+header{
+    background:#1e293b;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+header h1{
+    color:#38bdf8;
+}
+
+nav a{
+    color:#f1f5f9;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+    border-bottom:2px solid #38bdf8;
+}
+
+section{
+    padding:70px 10%;
+    opacity:0;
+    transform:translateY(40px);
+    animation:fadeIn 1s forwards;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero{
+    text-align:center;
+    padding:120px 10%;
+}
+
+.hero h2{
+    font-size:42px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+    transform:scale(1.05);
+}
+
+.about,.projects,.contact{
+    background:#1e293b;
+    border-radius:12px;
+    margin-top:30px;
+    padding:40px;
+}
+
+.section-title{
+    font-size:28px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.skill{
+    background:#0f172a;
+    padding:10px 18px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.skill:hover{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+.project-card{
+    background:#0f172a;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+form{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, textarea{
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    outline:none;
+}
+
+input:focus, textarea:focus{
+    border:2px solid #38bdf8;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    background:#0f172a;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+    nav{
+        margin-top:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Aamir Waqar</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hello, I'm <span>Aamir</span></h2>
+    <p>BTech CS Student | Web Developer | Problem Solver</p>
+    <a href="#contact" class="btn">Let's Connect</a>
+</section>
+
+<section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I'm a Computer Science student passionate about building responsive and interactive websites.
+        I enjoy solving problems and developing real-world applications.
+    </p>
+
+    <div class="skills">
+        <div class="skill">C</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-card">
+        <h3>Autonomous Water Surface Cleaning Robot</h3>
+        <p>IoT & AI based environmental cleaning system.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Plant Disease Detection System</h3>
+        <p>Machine learning model for identifying plant diseases from images.</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>Email: <a href="mailto:amirwaqar82100@gmail.com">amirwaqar82100@gmail.com</a></p>
+
+    <p>LinkedIn: 
+        <a href="https://www.linkedin.com/in/aamir-waqar-0a534326a" target="_blank">
+            linkedin.com/in/aamir-waqar-0a534326a
+        </a>
+    </p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Aamir Waqar | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
